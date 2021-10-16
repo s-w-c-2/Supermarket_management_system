@@ -9,4 +9,4 @@
 
 注册信息可以在password.txt中看见。
 
-商品信息可以在imformation中看见。
+商品信息可以在imformation.txt中看见。
