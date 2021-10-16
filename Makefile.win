@@ -1,0 +1,91 @@
+# Project: 项目1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = main.o login.o information.o screen1.o screen2.o sy.o yj.o jk.o add.o Del.o search1.o search2.o mccz1.o mccz2.o bhcz1.o bhcz2.o jgcz1.o jgcz2.o tj1.o tj2.o change.o save.o
+LINKOBJ  = main.o login.o information.o screen1.o screen2.o sy.o yj.o jk.o add.o Del.o search1.o search2.o mccz1.o mccz2.o bhcz1.o bhcz2.o jgcz1.o jgcz2.o tj1.o tj2.o change.o save.o
+LIBS     = -L"C:/Users/swc/Dev-Cpp/MinGW64/lib" -L"C:/Users/swc/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -pg -g3
+INCS     = -I"C:/Users/swc/Dev-Cpp/MinGW64/include" -I"C:/Users/swc/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/swc/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Users/swc/Dev-Cpp/MinGW64/include" -I"C:/Users/swc/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/swc/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Users/swc/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = 项目1.exe
+CXXFLAGS = $(CXXINCS) -pg -g3
+CFLAGS   = $(INCS) -pg -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+login.o: login.c
+	$(CC) -c login.c -o login.o $(CFLAGS)
+
+information.o: information.c
+	$(CC) -c information.c -o information.o $(CFLAGS)
+
+screen1.o: screen1.c
+	$(CC) -c screen1.c -o screen1.o $(CFLAGS)
+
+screen2.o: screen2.c
+	$(CC) -c screen2.c -o screen2.o $(CFLAGS)
+
+sy.o: sy.c
+	$(CC) -c sy.c -o sy.o $(CFLAGS)
+
+yj.o: yj.c
+	$(CC) -c yj.c -o yj.o $(CFLAGS)
+
+jk.o: jk.c
+	$(CC) -c jk.c -o jk.o $(CFLAGS)
+
+add.o: add.c
+	$(CC) -c add.c -o add.o $(CFLAGS)
+
+Del.o: Del.c
+	$(CC) -c Del.c -o Del.o $(CFLAGS)
+
+search1.o: search1.c
+	$(CC) -c search1.c -o search1.o $(CFLAGS)
+
+search2.o: search2.c
+	$(CC) -c search2.c -o search2.o $(CFLAGS)
+
+mccz1.o: mccz1.c
+	$(CC) -c mccz1.c -o mccz1.o $(CFLAGS)
+
+mccz2.o: mccz2.c
+	$(CC) -c mccz2.c -o mccz2.o $(CFLAGS)
+
+bhcz1.o: bhcz1.c
+	$(CC) -c bhcz1.c -o bhcz1.o $(CFLAGS)
+
+bhcz2.o: bhcz2.c
+	$(CC) -c bhcz2.c -o bhcz2.o $(CFLAGS)
+
+jgcz1.o: jgcz1.c
+	$(CC) -c jgcz1.c -o jgcz1.o $(CFLAGS)
+
+jgcz2.o: jgcz2.c
+	$(CC) -c jgcz2.c -o jgcz2.o $(CFLAGS)
+
+tj1.o: tj1.c
+	$(CC) -c tj1.c -o tj1.o $(CFLAGS)
+
+tj2.o: tj2.c
+	$(CC) -c tj2.c -o tj2.o $(CFLAGS)
+
+change.o: change.c
+	$(CC) -c change.c -o change.o $(CFLAGS)
+
+save.o: save.c
+	$(CC) -c save.c -o save.o $(CFLAGS)
